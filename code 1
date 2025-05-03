@@ -1,0 +1,45 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    string A,B;
+     A>>B;
+
+    int a= A.size();
+    int b= B.size();
+    int i,j,c;
+    if(a==b)
+    {
+        for(i=0; i<a; i++)
+        {
+            for(j=0; j<b; j++)
+            {
+                if(A[i]!=B[j])
+                {
+                    break;
+                }
+                else
+                {
+                    c=1;
+                }
+            }
+
+        }
+        if(c==1)
+        {
+            cout<<"anagram";
+            }
+         else
+         {
+             cout<< "not";
+         }
+    }
+    else
+    {
+        cout<< "not";
+    }
+
+
+
+}
